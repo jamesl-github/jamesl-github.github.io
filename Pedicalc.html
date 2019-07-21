@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>NICU Calculator</title>
+  <meta content="text/html;" charset="utf-8" http-equiv="Content-Type">
+  <link href="nicu_calc.css" rel="stylesheet" type="text/css">
+  <script src="js_folder/nicu_calc.js">
+</script>
+</head>
+
+<body>
+  <form>
+    <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">
+      aaaaaaaaaa
+
+      <table class="main_table">
+      
+        <tr>
+          <td style="border-width : 0px;"><br></td>
+
+          <td style="border-width : 0px;"><br></td>
+
+          <td style="border-width : 0px;"><br></td>
+
+          <td style="border-width : 0px;"><br></td>
+
+          <td style="border-width : 0px;"><br></td>
+
+          <td style="border-width : 0px;"><br></td>
+
+          <td style="border-width : 0px;"><br></td>
+
+          <td style="border-width : 0px;"><br></td>
+
+          <td style="border-width : 0px;"><br></td>
+
+        </tr>
+
+        <tr>
+          <td colspan="3"><img src="img/chony.jpg" width="454" height="167" alt="CHONY logo"></td>
+
+          <td colspan="6">STAMP Addressograph HERE&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="background-color: #ccffcc;"><span class="BldText">Patient Name (Last, First):</span></td>
+
+          <td colspan="1" style="background-color: #ccffcc;"><span class="BldText">MR#:</span></td>
+
+          <td colspan="1" style="background-color: #ccffff;"><span class="BldText">Weight (kg:)</span></td>
+
+          <td colspan="3" style="background-color: #ccffff;"><span class="BldText">Crown-heel length (cm)</span></td>
+
+          <td colspan="2" style="background-color: #ffff99;"><span class="BldText">Signature/Check (Signature)</span></td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="background-color: #ffffff;"><input name="pt_name" id="pt_name" type="text" size="20"></td>
+
+          <td colspan="1" style="background-color: #ffcc00;"><input name="mrn" id="mrn" type="text" size="7"></td>
+
+          <td colspan="1" style="background-color: #ccffff; position: relative;">
+          <span class="input-directions" id="weight-directions"><b>Weight</b><br>Please enter <br>the infant&#39;s weight in <br>kilograms.</span> 
+            <input name="kg" id="kg" type="text" size="4" style="z-index: 1;" 
+              onfocus="document.getElementById(&#39;weight-directions&#39;).style.display=&#39;block&#39;;" 
+              onblur="document.getElementById(&#39;weight-directions&#39;).style.display=&#39;none&#39;;" 
+              onchange="weight_changed(this.form)"></td>
+
+          <td colspan="3" style="background-color: #ccffff; position: relative;">
+          <span class="input-directions" id="crown-heel-directions"><b>Crown-Heel Length</b><br>Please enter the <br>infant&#39;s length <br>as a whole number <br>from 30 to 58 <br>cm.</span> 
+            <input name="crown-heel-length" id="crown-heel-length" type="text" size="4" style="z-index: 1;" 
+              onfocus="document.getElementById(&#39;crown-heel-directions&#39;).style.display=&#39;block&#39;;" 
+              onblur="document.getElementById(&#39;crown-heel-directions&#39;).style.display=&#39;none&#39;;" 
+              onchange="weight_changed(this.form)"></td>
+
+          <td colspan="2" style="background-color: #ffff99;"><input name="signature" id="signature" type="text" size="20"></td>
+        </tr>
+
+        <tr>
+          <td colspan="9"><input onclick="propofol(this.form)" type="button" value="Enter" name="enter" id="enter"> &nbsp; <input type="reset" value="Reset" name="reset" id="reset"></td>
+        </tr>
+
+        <tr>
+          <td colspan="9">&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td colspan="7"><span class="Red_Bold">MISCELLANEOUS</span></td>
+
+          <td colspan="1"><span class="BldText">Dose/kg</span></td>
+
+          <td colspan="1"><span class="BldText">Dose to Give</span></td>
+        </tr>
+
+        <tr>
+          <td colspan="7"><span class="BldText">Cardioversion</span></td>
+
+          <td colspan="1"><span class="BldText">0.5 j/kg</span></td>
+
+          <td colspan="1"><span class="BldText" id="cardio">&nbsp;</span></td>
+        </tr>
+
+        <tr>
+          <td colspan="7"><span class="BldText">Defibrillation</span></td>
+
+          <td colspan="1"><span class="BldText">2 j/kg</span></td>
+
+          <td colspan="1"><span class="BldText" id="defib">&nbsp;</span></td>
+        </tr>
+
+        <tr>
+          <td colspan="5" style="border-width : 0px;"><br></td>
+
+          <td style="border-width : 0px;"><br></td>
+
+          <td style="border-width : 0px;"><br></td>
+
+          <td style="border-width : 0px;"><br></td>
+
+          <td style="border-width : 0px;"><br></td>
+        </tr>
+      </table>bbbbbbbbbbbbbb
+    </div>
+  </form>
+</body>
+</html>
